@@ -1,0 +1,66 @@
+.about {
+  line-height: 2.5em;
+  letter-spacing: 1px;
+  font-family: "Righteous", cursive;
+}
+
+.about h3 {
+  font-weight: 400;
+}
+
+.about .hello_txt {
+  background-color: var(--font-color);
+  color: var(--font-color-inverse);
+  font-family: "Righteous", cursive;
+  padding: 5px;
+  position: relative;
+}
+
+.about .hello_txt::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  left: 0;
+  bottom: 0;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  z-index: -1;
+  border-radius: 0 0 100%;
+  background-color: var(--font-color);
+}
+
+.about .imp_primary {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.about button {
+  outline: none;
+  background-color: var(--background);
+  -webkit-box-shadow: -5px 5px 0 0 var(--secondary-color);
+          box-shadow: -5px 5px 0 0 var(--secondary-color);
+  -webkit-transition: -webkit-box-shadow 300ms;
+  transition: -webkit-box-shadow 300ms;
+  transition: box-shadow 300ms;
+  transition: box-shadow 300ms, -webkit-box-shadow 300ms;
+  border: 1px solid var(--secondary-color);
+  font-family: "Righteous", cursive;
+  letter-spacing: 2px;
+}
+
+.about button:active, .about button:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.about button a {
+  padding: 10px 20px;
+  display: block;
+  color: var(--font-color);
+}
+
+.about .secondary_btn {
+  margin: 0 10px;
+}
+/*# sourceMappingURL=about.css.map */

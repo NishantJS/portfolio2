@@ -1,0 +1,55 @@
+.theme_toggle input.theme_checkbox {
+  display: none;
+}
+
+.theme_toggle .toggle {
+  cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 25px;
+  border-radius: 100px;
+  background-color: var(--secondary-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.theme_toggle .toggle .theme_title {
+  position: absolute;
+  top: -20px;
+  word-wrap: none;
+  width: 55px;
+}
+
+.theme_toggle .toggle .toggle_handler {
+  display: inline-block;
+  position: relative;
+  background-color: #ddf;
+  z-index: 1;
+  width: 25px;
+  height: 26px;
+  border-radius: 25px;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  -webkit-transition: background-color, -webkit-transform 300ms ease-out;
+  transition: background-color, -webkit-transform 300ms ease-out;
+  transition: background-color, transform 300ms ease-out;
+  transition: background-color, transform 300ms ease-out, -webkit-transform 300ms ease-out;
+}
+
+.theme_toggle .toggle .theme_change {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.theme_toggle .dark {
+  background-color: #666;
+}
+
+.theme_toggle .dark .toggle_handler {
+  background-color: #b3b3b3;
+}
+/*# sourceMappingURL=theme.css.map */

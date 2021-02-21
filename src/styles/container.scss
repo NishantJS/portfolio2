@@ -1,0 +1,31 @@
+@import "variables";
+
+.main {
+  .container {
+    position: relative;
+    color: $text_color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+    .theme_toggle {
+      position: absolute;
+      right: 10px;
+      bottom: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@media (min-width: 415px) {
+  .main {
+    .container {
+      border: 5px solid $primary;
+      border-top: 5px solid $primary;
+      border-left: none;
+    }
+  }
+}
