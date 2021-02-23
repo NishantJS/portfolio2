@@ -1,6 +1,13 @@
 @import "variables";
 
 .theme_toggle {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   input.theme_checkbox {
     display: none;
   }

@@ -3,16 +3,10 @@
 .about {
   line-height: 2.5em;
   letter-spacing: 1px;
-  font-family: $heading_font;
-
-  h3 {
-    font-weight: 400;
-  }
 
   .hello_txt {
     background-color: $text_color;
     color: $text_color_inverse;
-    font-family: $heading_font;
     padding: 5px;
     position: relative;
 
@@ -24,7 +18,6 @@
       left: 0;
       bottom: 0;
       transform: translateY(50%);
-      z-index: -1;
       border-radius: 0 0 100%;
       background-color: $text_color;
     }
@@ -41,8 +34,8 @@
     box-shadow: -5px 5px 0 0 $secondary;
     transition: box-shadow 300ms;
     border: 1px solid $secondary;
-    font-family: $heading_font;
     letter-spacing: 2px;
+    font-family: "Poppins";
 
     &:active,
     &:hover {

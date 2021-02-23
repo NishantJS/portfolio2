@@ -5,9 +5,9 @@ import About from './About';
 import Contact from './Contact';
 import Project from './Project';
 import NotFound from './NotFound';
-import "../styles/container.scss";
 import Theme from './Theme';
 import { useEffect, useRef } from 'react';
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 import Particle from './Particle';
 
 const App = (): JSX.Element => {
@@ -20,7 +20,8 @@ const App = (): JSX.Element => {
 
   }, [])
 
-  const isMobile = useRef(window.innerWidth > 400 ? false : true)
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const isMobile = useRef(window.innerWidth > 700 ? false : true)
 
   const isDark = localStorage.getItem("theme") === "dark" ? true : false;
 
@@ -39,7 +40,7 @@ const App = (): JSX.Element => {
           <Theme isDarkTheme={isDark} />
         </div>
       </Router>
-      {!isMobile.current && <Particle />}
+      {/* {!isMobile.current && <Particle />} */}
     </div>
   );
 }
