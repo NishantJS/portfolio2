@@ -10,10 +10,10 @@ const Project = () => {
   }, [])
 
   return (
-    <div className="project">
+    <section className="project">
       {ProjectData.map(({ imgd, imgl, repo, live, title, desc }): JSX.Element => (
         <div className="card_group" key={title}>
-          <div className="card" title={title}>
+          <article className="card" title={title}>
             <div className="box">
               <span></span><span></span><span></span>
             </div>
@@ -26,17 +26,17 @@ const Project = () => {
               <a href={repo} title={`Github Repository of ${title}`}>Repo</a>
             </div>
 
-          </div>
-          <div className="card" title={title}>
+          </article>
+          <article className="card info_card" title={title}>
             <div className="box">
               <span></span><span></span><span></span>
             </div>
-            <div className="desc">
+            <div className="info">
               <p>{desc}</p>
             </div>
-          </div>
+          </article>
         </div>
       ))}
-    </div>)
+    </section>)
 }
 export default Project

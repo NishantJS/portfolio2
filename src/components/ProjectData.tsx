@@ -8,14 +8,14 @@ export const ProjectData = [
     imgl: Portfolio,
     repo: "https://github.com/NishantJS/Buddy-Frontend",
     live: "https://www.www.com",
-    desc: "In FrontEnd of buddy I have used React + Sass. For routing React-Roter and for state I have used Hooks + Redux, For API fetching I have used Axios"
+    desc: "Buddy is an E-Commerce site for pets care products. In FrontEnd of buddy I have used React + Sass. For routing React-Roter and for state I have used Hooks + Redux, For API fetching I have used Axios"
   }, {
     title: "Diary FrontEnd",
     imgd: PortfolioDark,
     imgl: Portfolio,
     repo: "https://github.com/NishantJS/diary",
     live: "www.www.com",
-    desc: ""
+    desc: "My Capston Project Diary is a web app where one can save their moments on cloud and share it with their loved ones and friends. Front End is built with React + React Router + Sass + Redux and Axios"
   }, {
     title: "Portfolio",
     imgd: PortfolioDark,
@@ -28,12 +28,12 @@ export const ProjectData = [
     imgd: PortfolioDark,
     imgl: Portfolio,
     repo: "https://github.com/NishantJS/Buddy-Backend",
-    desc: ""
+    desc: "As this was my first MERN project I faced many problem while learning and building it. For backend I have used Express, and for Database I have used Mongoose. Also I have used JWT and stored Salted passwords in Database for Security."
   }, {
     title: "Diary BackEnd",
     imgd: PortfolioDark,
     imgl: Portfolio,
     repo: "https://github.com/NishantJS/diary",
-    desc: ""
+    desc: "For backend of Diary I have used Express and for database I have used MongoDB. Also JWT and Salted Passwords are used in this project also"
   }
 ]

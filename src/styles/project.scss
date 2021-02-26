@@ -21,15 +21,20 @@
     display: flex;
 
     .card {
-      max-width: 300px;
+      // max-width: 500px;
+      flex: 1;
       margin: 20px 5px;
       padding: 2px;
-      height: auto;
+      height: fit-content;
       transition: box-shadow 500ms;
       background-color: $bg_color;
       display: flex;
       flex-direction: column;
       border-radius: 5px 5px 0 0;
+
+      &.info_card {
+        height: auto;
+      }
 
       .box {
         display: flex;
@@ -71,7 +76,7 @@
         }
       }
 
-      .desc {
+      .info {
         height: 100%;
         padding: 0 5px;
         background-color: $background;

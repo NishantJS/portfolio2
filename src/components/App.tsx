@@ -40,7 +40,7 @@ const App = (): JSX.Element => {
           <Theme isDarkTheme={isDark} />
         </div>
       </Router>
-      {/* {!isMobile.current && <Particle />} */}
+      {!isMobile.current && <Particle />}
     </div>
   );
 }
