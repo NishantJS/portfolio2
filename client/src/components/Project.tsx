@@ -11,7 +11,7 @@ const Project = () => {
 
   return (
     <section className="project">
-      {ProjectData.map(({ imgd, imgl, repo, live, title, desc }): JSX.Element => (
+      {ProjectData.map(({ imgd, imgl, repo, title, desc }): JSX.Element => (
         <div className="card_group" key={title}>
           <article className="card" title={title}>
             <div className="box">
@@ -21,7 +21,6 @@ const Project = () => {
               <img src={isDark ? imgd : imgl} alt="Screenshot Load Error" />
             </div>
             <div className="title">
-              {live && <a href={live} title={`Live version of ${title}`}>Live</a>}
               <h5>{title}</h5>
               <a href={repo} title={`Github Repository of ${title}`}>Repo</a>
             </div>

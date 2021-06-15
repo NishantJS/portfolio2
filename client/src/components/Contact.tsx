@@ -37,6 +37,11 @@ const ContactData: contactType[] = [
     icon: <Email />,
     handle: "nishantchorge79@gmail.com",
     link: "mailto:nishantchorge79@gmail.com"
+  }, {
+    title: "E-mail",
+    icon: <Email />,
+    handle: "nishantchorge@yahoo.com",
+    link: "mailto:nishantchorge@yahoo.com"
   },
   {
     title: "Github",
@@ -48,7 +53,7 @@ const ContactData: contactType[] = [
     title: "Linked-in",
     icon: <Linkedin />,
     handle: "/NishantChorge",
-    link: "https://linkedin.com/NishantChorge"
+    link: "https://www.linkedin.com/in/nishant-chorge/"
   },
   {
     title: "Call",
