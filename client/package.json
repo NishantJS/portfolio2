@@ -1,5 +1,5 @@
 {
-  "homepage": "https://nishantjs.github.io/portfolio2/",
+  "homepage": "https://nishant.social",
   "name": "portfolio",
   "version": "2.0.1",
   "private": true,
@@ -12,8 +12,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build", 
-    "deploy": "gh-pages -d build", 
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
