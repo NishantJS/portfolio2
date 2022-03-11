@@ -1,6 +1,6 @@
 import '../styles/main.scss';
 import Sidebar from './Sidebar';
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import About from './About';
 import Contact from './Contact';
 import Project from './Project';
@@ -27,8 +27,7 @@ const App = (): JSX.Element => {
 
   return (
     <div className="main">
-      <Router>
-        <Sidebar />
+      <Sidebar />
         <div className="container">
           <Switch>
             <Route exact path="/" component={About} />
@@ -39,7 +38,6 @@ const App = (): JSX.Element => {
           </Switch>
           <Theme isDarkTheme={isDark} />
         </div>
-      </Router>
       {!isMobile.current && <Particle />}
     </div>
   );
