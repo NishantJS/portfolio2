@@ -1,6 +1,6 @@
 import '../styles/main.scss';
 import Sidebar from './Sidebar';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import About from './About';
 import Contact from './Contact';
 import Project from './Project';
