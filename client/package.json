@@ -1,5 +1,5 @@
 {
-  "homepage": "http://www.nishantc.me",
+  "homepage": "http://www.nishant.social",
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
@@ -12,7 +12,7 @@
     "react-dom": "^17.0.2",
     "react-particles-js": "^3.4.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^5.0.0",
     "typescript": "^4.3.2"
   },
   "scripts": {

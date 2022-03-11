@@ -7,13 +7,13 @@ const About = (): JSX.Element => {
     <div className="about">
       <span className="hello_txt">HELLO</span>
       <h1><span className="imp_primary">I'm</span> Nishant Chorge.</h1>
-      <h3>I Love building things for <span className="imp_primary">web</span >.</h3>
+      <h2>I Love building things for <span className="imp_primary">web</span >.</h2>
       <h3>I want to make things that make a <span className="imp_primary">difference</span>.</h3>
-      <h3>I'm a web developer living in <span className="imp_primary">Maharashtra, India</span>.</h3>
+      <h4>I'm a web developer living in <span className="imp_primary">Maharashtra, India</span>.</h4>
       <button>
-        <a href={resume} title="Resume">Resume</a>
+        <a href={resume} title="Resume" target="_blank" rel="noopener noreferrer"><h5>Resume</h5></a>
       </button>
-      <a className="secondary_btn" href="mailto:nishantchorge79@gmail.com">Mail me</a>
+      <a className="secondary_btn" href="mailto:nishantchorge79@gmail.com"><h6>Mail me</h6></a>
     </div>
   )
 }

@@ -18,8 +18,8 @@ const Contact = (): JSX.Element => {
 
       {ContactData.map(({ title, icon, handle, link }: contactType, i) => {
         return (
-          <a href={link} key={title} title={title}>
-            <div className={`link link-${i + 1}`}>
+          <a href={link} key={handle} title={title} target="_blank" rel="noopener noreferrer">
+            <div className="link">
               <span className="icon">{icon}</span>
               <span>{handle}</span>
             </div>

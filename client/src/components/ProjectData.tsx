@@ -1,36 +1,36 @@
 import PortfolioDark from "../assets/portfolio_dark.png";
 import Portfolio from "../assets/portfolio_light.png";
+import Moments0 from "../assets/moments0.png";
+import Moments1 from "../assets/moments1.jpg";
+import BuddyDark from "../assets/buddy_dark.png";
+import Buddy from "../assets/buddy_light.png";
 
 export const ProjectData = [
   {
     title: "Buddy FrontEnd",
-    imgd: PortfolioDark,
-    imgl: Portfolio,
+    imgd: BuddyDark,
+    imgl: Buddy,
     repo: "https://github.com/NishantJS/Buddy-Frontend",
-    desc: "Buddy is an E-Commerce site for pet care products. In FrontEnd of buddy I have used React + Sass. For routing React-Router and for state I have used Hooks + Redux, For API fetching I have used Axios"
+    desc: "Buddy is an E-Commerce site for pet care products. In FrontEnd of buddy I have used __$__React + Sass__$__. For routing __$__React-Router__$__ and for state I have used __$__Hooks + Redux + Thunk__$__, For API fetching I have used __$__Axios__$__",
+    live: "https://www.buddyshop.in"
   }, {
-    title: "Diary FrontEnd",
-    imgd: PortfolioDark,
-    imgl: Portfolio,
-    repo: "https://github.com/NishantJS/diary",
-    desc: "My Capstone Project Diary is a web app where one can save their moments on cloud and share it with their loved ones and friends. Front End is built with React + React Router + Sass + Redux and Axios"
+    title: "Moments",
+    imgd: Moments0,
+    imgl: Moments1,
+    repo: "https://github.com/NishantJS/Moments",
+    desc: "My Capstone Project Moments is a web app where one can save their moments on cloud and share it with their loved ones and friends. Built with __$__React + React Router + Sass + Firebase__$__"
   }, {
     title: "Portfolio",
     imgd: PortfolioDark,
     imgl: Portfolio,
     repo: "https://github.com/NishantJS/portfolio2",
-    desc: "If you are reading this then you are on this project. This project is made with React + React Router + Sass and Typescript."
+    desc: "If you are reading this then you are on this project. This project is made with __$__React + React Router + Sass and Typescript__$__"
   }, {
     title: "Buddy Backend",
-    imgd: PortfolioDark,
-    imgl: Portfolio,
+    imgd: BuddyDark,
+    imgl: Buddy,
     repo: "https://github.com/NishantJS/Buddy-Backend",
-    desc: "As this was my first MERN project I faced many problem while learning and building it. For backend I have used Express, and for Database I have used MongoDB. Also I have used JWT for sessions and stored Salted passwords in Database for Security. Authentication is done with Passport"
-  }, {
-    title: "Diary BackEnd",
-    imgd: PortfolioDark,
-    imgl: Portfolio,
-    repo: "https://github.com/NishantJS/diary",
-    desc: "For backend of Diary I have used Express and for database I have used MongoDB. Also JWT and Salted Passwords are used in this project also. Authentication is done with Passport"
+    desc: "For backend of Buddy I have used __$__Express__$__, and for Database I have used __$__MongoDB__$__. Also I have used __$__JWT__$__ for sessions. Authentication is done with __$__Passport__$__",
+    live: "https://www.buddyshop.in",
   }
 ]
