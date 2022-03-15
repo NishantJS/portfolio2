@@ -6,7 +6,7 @@
 
   .hello_txt {
     background-color: $text_color;
-    color: $text_color_inverse;
+    color: $background;
     padding: 5px;
     position: relative;
 
@@ -25,7 +25,7 @@
 
   .imp_primary {
     text-decoration: none;
-    color: $secondary;
+    color: $text_color_inverse;
   }
 
   button {
