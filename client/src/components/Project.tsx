@@ -2,12 +2,11 @@ import { ProjectData } from "./ProjectData"
 import "../styles/project.scss"
 import { useEffect, useState, Fragment } from "react"
 
-const Project = () => {
+interface Props{
+  isDarkTheme : boolean
+}
 
-  let [isDark, setDark] = useState(() => true);
-  useEffect(() => {
-    localStorage.getItem("theme") === "dark" ? setDark(() => true) : setDark(() => false);
-  }, [])
+const Project = (props: Props) => {
 
   return (
     <section className="project">
@@ -18,7 +17,7 @@ const Project = () => {
               <span></span><span></span><span></span>
             </div>
             <div className="img">
-              <a href={isDark ? imgd : imgl} target="_blank" rel="noopener noreferrer"><img src={isDark ? imgd : imgl} alt="Screenshot Load Error" /></a>
+              <a href={props.isDarkTheme ? imgd : imgl} target="_blank" rel="noopener noreferrer"><img src={props.isDarkTheme ? imgd : imgl} alt="Screenshot Load Error" /></a>
             </div>
             <div className="title">
               {live && <a href={live} title={`Live version of ${title}`} target="_blank" rel="noopener noreferrer">Live</a>}

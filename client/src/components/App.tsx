@@ -1,13 +1,14 @@
 import '../styles/main.scss';
-import Sidebar from './Sidebar';
+import { useEffect, useRef, useState, lazy, Suspense } from 'react';
 import { Switch, Route } from "react-router-dom";
-import About from './About';
-import Contact from './Contact';
-import Project from './Project';
-import NotFound from './NotFound';
-import Theme from './Theme';
-import { useEffect, useRef, useState } from 'react';
 import Particle from './Particle';
+import Loading from "./Loading";
+import Sidebar from "./Sidebar";
+const About = lazy(() => import('./About'));
+const Contact = lazy(() => import('./Contact'));
+const Project = lazy(() => import('./Project'));
+const Theme = lazy(() => import('./Theme'));
+const NotFound = lazy(() => import('./NotFound'));
 
 const App = (): JSX.Element => {
 
@@ -40,7 +41,6 @@ const App = (): JSX.Element => {
   }, [isDarkTheme])
 
   const isMobile = useRef(window.innerWidth > 700 ? false : true);
-  const container = useRef<HTMLDivElement>(null);
 
   const updateTheme = (): void => {
     let root = document.documentElement;
@@ -56,25 +56,21 @@ const App = (): JSX.Element => {
     }
   };
 
-  const detectGesture = (event: React.TouchEvent<HTMLDivElement>) => {
-  
-    // !(event.changedTouches[0].clientX < (window.innerWidth / 2))
-
-  }
-
   return (
     <div className="main">
       <Sidebar />
-      <div className="container" ref={container} onTouchEnd={(event)=> isMobile.current ? detectGesture(event): console.log()}>
-          <Switch>
-            <Route exact path="/" component={About} />
-            <Route exact path="/project" component={Project} />
-            <Route exact path="/contact" component={Contact} />
-            <Route path="/about" component={About} />
-            <Route component={NotFound} />
-          </Switch>
-        <Theme isDarkTheme={isDarkTheme} updateTheme={updateTheme}/>
-        </div>
+      <div className="container">
+      <Suspense fallback={<Loading/>}>
+        <Switch>
+          <Route exact path="/" component={About} />
+            <Route exact path="/project" component={()=><Project isDarkTheme={isDarkTheme}/>}/>
+          <Route exact path="/contact" component={Contact} />
+          <Route path="/about" component={About} />
+          <Route component={NotFound} />
+        </Switch>
+      <Theme isDarkTheme={isDarkTheme} updateTheme={updateTheme}/>
+      </Suspense>
+      </div>
       {!isMobile.current && <Particle />}
     </div>
   );
