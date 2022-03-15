@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[123],{123:function(e,r,o){o.r(r);var i=o(184);r.default=function(){return(0,i.jsxs)("div",{children:[(0,i.jsx)("h1",{children:"404"}),(0,i.jsx)("h2",{children:"Looks like this page is either removed or moved somewhere permanantly."})]})}}}]);
+//# sourceMappingURL=123.66648f4f.chunk.js.map
