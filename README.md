@@ -27,7 +27,7 @@ Created something awesome for your fork of the portfolio and want to share it? F
 
 ## Todo
 
-complete:
+complete:\
 ✔️ Summary and About me\
 ✔️ Projects\
 ✔️ Contact\
