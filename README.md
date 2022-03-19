@@ -28,12 +28,12 @@ Created something awesome for your fork of the portfolio and want to share it? F
 ## Todo
 
 complete:
-✔️ Summary and About me
-✔️ Projects
-✔️ Contact
-✔️ Theme toggle
-✔️ Background Particles
-in work:
+✔️ Summary and About me\
+✔️ Projects\
+✔️ Contact\
+✔️ Theme toggle\
+✔️ Background Particles\
+in work:\
 ❌ Education
 
 To view a live example, **[click here](https://nishant.social)**.
