@@ -142,7 +142,7 @@ This section guides you to deploy your portfolio on GitHub pages.
 
 - In short you can also add `/portfolio2` to `package.json` as both are exactly same. Upon doing so, you tell `create-react-app` to add the path assets accordingly.
 
-- If you do add `/portfolio2/` and using BrowserRouter instead HashRouter set the basename as `/portfolio`. for HashRouter u don't have to do anything.
+- If you do add `/portfolio2/` and using BrowserRouter instead HashRouter set the basename as `/portfolio2`. for HashRouter u don't have to do anything.
 
 - Optionally, configure the domain. You can configure a custom domain with GitHub Pages by adding a `CNAME` file to the `public/` folder.
 
