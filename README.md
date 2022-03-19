@@ -69,6 +69,9 @@ npm start
 - portfolio2
     - node_modules
     - public
+        - CNAME  <-- edit if you are using your own domain or remove it.
+        also remove all the files here except index html. go to any favicon generator online and paste your own icons here
+
     - src
         - assets  <-- change png images to your project screenshots
         - styles
@@ -80,6 +83,8 @@ npm start
     - .gitignore
     - package-lock.json
     - package.json
+    - README.md
+    - tsconfig.json
 ```
 
 ```javascript
@@ -146,6 +151,8 @@ This section guides you to deploy your portfolio on GitHub pages.
 #### Deploying to Github pages
 
 For more information, read [hosting react app](https://create-react-app.dev/docs/deployment/#github-pages).
+
+- If all steps are complete u can run `npm run deploy` command to create a product code and push it to github pages for deployment.
 
 
 ## Technologies Used 
