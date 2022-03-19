@@ -1,6 +1,6 @@
 import { ProjectData } from "./ProjectData"
 import "../styles/project.scss"
-import { useEffect, useState, Fragment } from "react"
+import { Fragment } from "react"
 
 interface Props{
   isDarkTheme : boolean

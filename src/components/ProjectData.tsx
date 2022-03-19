@@ -5,6 +5,17 @@ import Moments1 from "../assets/moments1.jpg";
 import BuddyDark from "../assets/buddy_dark.png";
 import Buddy from "../assets/buddy_light.png";
 
+/**
+* @param imgd for dark theme image
+* @param imgl for light theme image
+//* Please change the url and name above if u have changed the images in assets folder already 
+* @param repo for github repository link
+* @param desc for github repository link
+* @param desc for project description
+* @param link for project live version if available
+//? __$__ is used to underline in frontend
+**/
+
 export const ProjectData = [
   {
     title: "Buddy FrontEnd",
